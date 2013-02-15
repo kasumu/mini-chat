@@ -15,7 +15,7 @@ server = net.createServer(function(conn){
   });
  
   //Imprime no cliente a mensagem de início no mini-chat.  
-  conn.write("Node ChatnName: ");// Variável para identificar o nome do usuário conectado.  
+  conn.write("Node ChatName: ");// Variável para identificar o nome do usuário conectado.  
   var username;
  
   // No evento carry é que o mini-chat acontece.  
@@ -46,6 +46,3 @@ server = net.createServer(function(conn){
 
 // Inicia o servidor mini-chat abrindo a porta 4000.  
 server.listen(4000,function(){console.log("SERVER LISTENING")});
-
-// Imprime mensagem alertando que o servidor está em execução.  
-console.log("Servidor mini-chat em execução."); 
